@@ -1,0 +1,44 @@
+.coteg {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+@media only screen and (max-width: 600px) {
+  .coteg {
+    text-align: center;
+    flex-direction: column;
+    gap: 30px;
+  }
+}
+
+.cards {
+  border: 1px solid #dde7de;
+  border-radius: 20px;
+  padding: 35px 20px 35px 20px;
+  background: #fff;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__text {
+    font-size: 10px;
+    line-height: 10px;
+    margin-bottom: 0;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 600;
+    margin-top: 10px;
+  }
+
+  &__heading {
+    font-size: 20px;
+    text-transform: capitalize;
+    display: block;
+    margin: 0;
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+}

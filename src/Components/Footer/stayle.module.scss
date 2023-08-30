@@ -1,0 +1,101 @@
+.footer {
+  margin-bottom: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+
+  &__loogs {
+    margin-top: 50px;
+    h2 {
+      font-family: "Pacifico", cursive;
+      color: black;
+      font-size: 32px;
+      text-decoration: none;
+      cursor: pointer;
+    }
+    p {
+      color: black;
+      font-size: 12px;
+      margin-top: 30px;
+    }
+    i {
+      margin-top: 30px;
+      cursor: pointer;
+      font-size: 12px;
+      letter-spacing: 1px;
+      line-height: 33px;
+      transition: 0.3s ease;
+      font-weight: 500;
+      color: white;
+      width: 35px;
+      height: 35px;
+      background: black;
+      text-align: center;
+      margin-right: 8px;
+      transition: 0.3s ease;
+      border-radius: 50px;
+
+      &:hover {
+        background-color: #fbd9b3;
+      }
+    }
+  }
+  .adress {
+    margin-top: 50px;
+    h1 {
+      a {
+        font-weight: 700;
+        font-size: 14px;
+        text-transform: uppercase;
+        margin-bottom: 15px;
+        letter-spacing: 1.5px;
+        color: black;
+      }
+    }
+    p {
+      a {
+        cursor: pointer;
+        font-size: 12px;
+        letter-spacing: 1px;
+        line-height: 33px;
+        transition: 0.3s ease;
+        font-weight: 500;
+        color: black;
+        &:hover {
+          color: #b7d4c5;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .footer {
+    flex-wrap: wrap;
+    gap: 40px;
+
+    &__loogs {
+      width: 350px;
+    }
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .footer {
+    flex-wrap: nowrap;
+    gap: 40px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .footer {
+    &__loogs {
+      width: 100%;
+    }
+
+    // padding-bottom: 150px;
+  }
+}

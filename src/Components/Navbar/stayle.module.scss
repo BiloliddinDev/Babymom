@@ -1,0 +1,238 @@
+.box {
+  background-color: #fbd9b3;
+}
+
+.nav {
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+
+  &__logo {
+    font-family: "Pacifico", cursive;
+    color: black;
+    font-size: 32px;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  &__drop {
+    position: absolute;
+    z-index: 90;
+    background-color: white;
+    list-style: none;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    left: 0;
+    top: 120%;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.295);
+    transition: all 0.3s;
+  }
+
+  &__dropn {
+    position: absolute;
+    width: 0;
+    height: 0;
+    opacity: 0;
+    z-index: 100 !important;
+  }
+
+  &__drop li {
+    font-size: 14px;
+    transition: all 0.3s;
+
+    &:hover {
+      color: #b7d4c5;
+    }
+  }
+
+  &__wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 40px;
+    align-items: center;
+    background-color: white;
+    padding: 10px;
+    border-radius: 100px;
+    // position: relative;
+  }
+
+  &__box1 {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+
+  &__box2 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  &__allprod {
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    position: relative;
+    text-transform: capitalize;
+    cursor: pointer;
+    letter-spacing: 1px;
+    color: #000;
+    padding: 10px 18px;
+    font-weight: 500;
+    background: #b7d4c5;
+    border-radius: 50px;
+    border: none;
+    gap: 10px;
+  }
+
+  &__pres {
+    position: relative;
+    cursor: pointer;
+    min-height: 15px;
+    padding: 0 15px 0 0px;
+    background-color: transparent;
+    font-weight: 500;
+    font-size: 14px;
+    text-transform: capitalize;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  &__baby {
+    min-height: 15px;
+    padding: 0 15px 0 0px;
+    background-color: transparent;
+    font-weight: 500;
+    font-size: 14px;
+    text-transform: capitalize;
+    transition: all 0.3s ease;
+  }
+
+  &__user {
+    background-color: #efc69a;
+    width: 35px;
+    height: 35px;
+    border-radius: 100px;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    color: white;
+  }
+
+  &__karzina {
+    cursor: pointer;
+    min-height: 35px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    border: 1px solid #efc69a;
+    border-radius: 50px;
+    padding-left: 10px;
+  }
+
+  &__span {
+    color: var(--black);
+    font-size: 12px;
+    line-height: 9px;
+    text-transform: capitalize;
+    margin-right: 3px;
+    letter-spacing: -0.03em;
+    font-weight: 600;
+  }
+
+  &__caunter {
+    position: absolute;
+    top: 8px;
+    width: 15px;
+    height: 15px;
+    right: -9px;
+    background-color: #fe4d4d;
+    color: var(--white);
+    font-size: 10px;
+    text-align: center;
+    line-height: 10px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+  }
+
+  &__bar {
+    display: none;
+    margin-left: 30px;
+  }
+
+  &__parda {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #b7d4c577;
+    width: 100%;
+    height: 100vh;
+    z-index: 60;
+    transition: 0.5s ease;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .nav {
+    &__bar {
+      display: flex;
+      font-size: 24px;
+    }
+
+    &__box1 {
+      position: fixed;
+      width: 60%;
+      z-index: 100;
+      top: 0;
+      left: -100%;
+      height: 100vh;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 30px;
+      background-color: #b7d4c5;
+      transition: all 0.5s;
+    }
+
+    &__show {
+      left: 0;
+    }
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .nav {
+    &__karzina {
+      padding: 0;
+    }
+    &__span {
+      display: none;
+    }
+
+    &__wrapper {
+      width: 100%;
+      margin-left: 10px;
+      justify-content: space-around;
+    }
+  }
+}
+
+@media only screen and (max-width: 380px) {
+  .nav {
+    &__bar {
+      margin-left: 5px;
+    }
+  }
+}

@@ -1,0 +1,14 @@
+.products {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+@media only screen and (max-width: 600px) {
+  .products {
+    flex-direction: column;
+    gap: 30px;
+    text-align: center;
+  }
+}

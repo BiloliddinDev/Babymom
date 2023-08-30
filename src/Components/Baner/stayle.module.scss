@@ -1,0 +1,82 @@
+.baner {
+  margin-top: 50px;
+  background-image: url("../../../public/Images/news-bg.jpg");
+  background-size: cover;
+  width: 100%;
+  padding: 60px 80px;
+  border-radius: 10px;
+  margin-bottom: 50px;
+
+  &__text {
+    font-weight: 600;
+    font-size: 17px;
+    letter-spacing: 2px;
+    margin-top: 0;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+  }
+
+  &__heading {
+    font-size: 40px;
+    margin-bottom: 20px;
+    margin-top: 0;
+    line-height: 50px;
+    color: var(--black);
+    font-weight: 500;
+  }
+
+  &__span {
+    display: block;
+    font-weight: 600;
+  }
+
+  &__lorem {
+    margin-bottom: 15px;
+    margin-top: 10px;
+    font-size: 13px;
+    line-height: 30px;
+  }
+
+  &__box {
+    width: 40%;
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-radius: 100px;
+    padding: 3px;
+
+    input {
+      width: 100%;
+      outline: none;
+      height: 42px;
+      padding: 10px 30px;
+      border-radius: 0;
+      border: none;
+      background: transparent;
+      color: var(--black);
+    }
+  }
+
+  &__folder {
+    border-radius: 100px;
+    padding: 12px;
+    font-weight: 600;
+    text-transform: capitalize;
+    font-size: 16px;
+    letter-spacing: 1px;
+    background: #fbd9b3;
+    border: none;
+    display: grid;
+    place-items: center;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .baner {
+    background-position: center;
+    text-align: center;
+    &__box {
+      width: 100%;
+    }
+  }
+}
