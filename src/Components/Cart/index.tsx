@@ -20,7 +20,7 @@ const Carts = ({ text, title, image, price, trueee, setData }: carttype) => {
       </div>
       <p className={s.cart__title}>{text}</p>
       <h4 className={s.cart__heading}>{title}</h4>
-      <Image width={200} height={200} src={image} />
+      <Image alt="product image" width={200} height={200} src={image} />
       <h2 className={s.cart__price}>${price}</h2>
       <Select style={{ width: "90%" }} defaultValue={"---Please Select---"} />
 

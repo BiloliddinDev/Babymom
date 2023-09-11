@@ -26,7 +26,7 @@ const Latest = () => {
           </h2>
           <p className={s.lates__lorem}>
             Lorem Ipsum is simply dummy text of the printing <br /> and
-            typesetting industry. Lorem Ipsum has been the <br /> industry's
+            typesetting industry. Lorem Ipsum has been the <br /> industrys
             standard dummy.
           </p>
           <Button
@@ -49,6 +49,7 @@ const Latest = () => {
               width={240}
               height={160}
               src={baner1}
+              alt="Produtc image"
             ></Image>
             <Button bg hover body="--Read--"></Button>
           </div>
@@ -65,6 +66,7 @@ const Latest = () => {
               width={240}
               height={160}
               src={baner2}
+              alt="Lates products image"
             ></Image>
             <Button body="--Read--"></Button>
           </div>

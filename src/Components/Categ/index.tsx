@@ -21,8 +21,8 @@ const Categ = () => {
       <div className={s.categ__wrapper}>
         <CaruselApp>
           {categdata.map((e, i) => (
-            <div className={s.cards}>
-              <Image src={e.img} height={45} width={45}></Image>
+            <div key={e.id} className={s.cards}>
+              <Image src={e.img} height={45} width={45} alt={e.name}></Image>
               <p className={s.cards__text}>{e.categ}</p>
               <h2 className={s.cards__heading}>{e.name}</h2>
               <div>

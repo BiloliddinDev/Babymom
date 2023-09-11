@@ -15,7 +15,7 @@
   border: 1px solid #dde7de;
   text-align: left;
   margin-bottom: 1px;
-  // height: 480px;
+
   margin: 0 10px;
 
   &__text {
@@ -31,6 +31,7 @@
   }
 
   &__img {
+    object-fit: cover;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
   }

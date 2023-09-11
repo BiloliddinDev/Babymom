@@ -8,16 +8,16 @@ const Sponsir = () => {
   return (
     <div className={`container ${s.wrapper}`}>
       <div>
-        <Image src={Logo1} width={230} height={45}></Image>
+        <Image src={Logo1} width={230} height={45} alt="bu logo"></Image>
       </div>
       <div>
-        <Image src={Logo2} width={230} height={60}></Image>
+        <Image src={Logo2} width={230} height={60} alt="bu logo"></Image>
       </div>
       <div>
-        <Image src={Logo1} width={230} height={45}></Image>
+        <Image src={Logo1} width={230} height={45} alt="bu logo"></Image>
       </div>
       <div>
-        <Image src={Logo2} width={230} height={60}></Image>
+        <Image src={Logo2} width={230} height={60} alt="bu logo"></Image>
       </div>
     </div>
   );

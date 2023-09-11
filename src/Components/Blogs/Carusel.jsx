@@ -23,9 +23,15 @@ const CaruselBlog = () => {
           breakPoints={breakPoints}
         >
           {Blogs.map((e) => (
-            <div className={s.cards}>
+            <div key={e.id} className={s.cards}>
               <p className={s.cards__text}>{e.data}</p>
-              <Image className={s.cards__img} src={e.image} />
+              <Image
+                alt={e.title}
+                width={373}
+                height={300}
+                className={s.cards__img}
+                src={e.image}
+              />
               <div className={s.cards__wrapper}>
                 <h4 className={s.cards__heading}>{e.title}</h4>
                 <p className={s.cards__title}>{e.des}</p>

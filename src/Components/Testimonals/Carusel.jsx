@@ -1,6 +1,6 @@
 import Carousel from "react-elastic-carousel";
 import { Testimonalsdata } from "../../Constants";
-import Image, { StaticImageData } from "next/image";
+import Image from "next/image";
 import React from "react";
 import s from "./stayle.module.scss";
 
@@ -20,8 +20,8 @@ const CaruselTestimonls = () => {
           breakPoints={breakPoints}
         >
           {Testimonalsdata.map((e, i) => (
-            <div className={s.cards}>
-              <Image src={e.image} width={300} />
+            <div key={e.id} className={s.cards}>
+              <Image src={e.image} width={300} height={300} alt={e.title} />
               <div>
                 <h4 className={s.cards__title}>{e.title}</h4>
                 <p className={s.cards__des}>{e.des}</p>

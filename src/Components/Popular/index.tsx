@@ -26,7 +26,7 @@ const Popular = () => {
           </h2>
           <p className={s.lates__lorem}>
             Lorem Ipsum is simply dummy text of the printing <br /> and
-            typesetting industry. Lorem Ipsum has been the <br /> industry's
+            typesetting industry. Lorem Ipsum has been the <br /> industrys
             standard dummy.
           </p>
           <Button
@@ -40,12 +40,12 @@ const Popular = () => {
           <CaruselApp>
             {ProductsData.map((e) => (
               <Carts
+                key={e.id}
                 trueee={e.id}
                 image={e?.image?.src}
                 price={e.price}
                 text={e.text}
                 title={e.title}
-                key={e.id}
               />
             ))}
           </CaruselApp>
